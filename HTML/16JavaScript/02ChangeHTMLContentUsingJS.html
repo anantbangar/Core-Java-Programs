@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title> Change HTML content using JS
+	</title>
+</head>
+<body>
+	<h1>Change HTML content using JS</h1>
+
+	<p id="demo1"></p>
+	
+	<br>
+
+	<p id="demo2"></p>
+
+	<br>
+	<br>
+
+	<button onclick="change()">Change</button>
+
+	<br>
+	<br>
+
+	<script>
+		function change()
+		{
+			var x="I am Pawan Bangar";
+			document.getElementById("demo1").innerHTML="Hello JS I am Anant";
+			document.getElementById("demo2").innerHTML=x;
+		}		
+	</script>
+</body>
+</html>

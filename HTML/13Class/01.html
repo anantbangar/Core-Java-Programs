@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title> Classes
+	</title>
+
+	<style>
+		.headings
+		{
+			font-family:cursive;
+			color:lightgreen;
+			background-color:black;
+		}
+
+		.fruit
+		{
+			background-color:orange;
+			color:white;
+			padding:10px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<h2 class="headings"> This is Classes example </h2>
+
+	<p class="fruit">
+		This is best way to learn html by ourself
+	</p>
+
+	<h4 class="fruit">
+		This is best way to learn html by ourself
+	</h4>
+
+
+	<button onclick="myFunction()"> Hide elements</button>
+
+	<script>
+		function myFunction()
+		{
+			var x=document.getElementsByClassName("fruit");
+			for(var i=0;i<x.length;i++)
+			{
+				x[i].style.display="none";
+			}
+		}
+	</script>
+</body>
+</html>
+	

@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title> Change HTML style using JS
+	</title>
+</head>
+<body>
+	<h1>Change HTML style using JS</h1>
+
+	<p id="demo">JavaScript can change the style of HTML elements</p>
+
+	<br>
+	<br>
+
+	<button onclick="change()">Change</button>
+
+	<br>
+	<br>
+
+	<script>
+		function change()
+		{
+			document.getElementById("demo").style.fontSize="25px";
+			document.getElementById("demo").style.color="red";
+			document.getElementById("demo").style.backgroundColor="green";
+		}		
+	</script>
+</body>
+</html>

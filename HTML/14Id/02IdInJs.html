@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title> Id Attribute in JavaScript
+	</title>
+</head>
+
+<body>
+	<h1> Id Attribute in JavaScript </h1><b>
+
+	Employee Name : 
+	<input type="text" name="ename" placeholder="your good name" id="ename" />
+
+	<br>
+	<br>
+
+	Date of Joining : 
+	<input type="date" id="doj">
+
+	<br>
+	<br>
+
+	<button onclick="viewDate()">ViewDate </button>
+
+	<br>
+	<br>
+
+	<h2 id="demo1"></h2>
+
+	<h2 id="demo2"></h2>
+
+<script>
+	function viewDate()
+	{
+		var x1=document.getElementById("doj").value;
+		document.getElementById("demo1").innerHTML=x1;
+
+		var x2=document.getElementById("ename").value;
+		document.getElementById("demo2").innerHTML=x2;
+	}
+</script>
+</body>
+</html>
+
+	

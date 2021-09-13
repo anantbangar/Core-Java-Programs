@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title> Inner Text
+	</title>
+</head>
+<body>
+	<form name="form1">
+		Enter Password <br>
+		<input type="password" name="pswrd" id="pswrd" onkeyup="check()" />
+		Strength : <span id="myloctn">no strength </span>
+	</form>
+
+	<script>
+		function check()
+		{
+			
+			if((document.form1.pswrd.value.length)>5)
+			{
+				document.getElementById("myloctn").innerHTML="good";
+			}
+			else
+				document.getElementById("myloctn").innerHTML="poor";
+		}
+
+		var m=navigator.appVersion;
+
+		document.writeln(m);
+
+		document.body.bgColor="pink";
+	</script>
+</body>
+</html>

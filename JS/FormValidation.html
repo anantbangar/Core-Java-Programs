@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title> Form Validation </title>
+</head>
+<body>
+	Full Name : <input type="text" name="fullname" id="fullname" /><br><br>
+
+	Password : <input type="password" name="password" id="password" /><br><br>
+
+	Re-enter Password : <input type="password" name="password2" id="password2" /><br><br>
+
+	Enter Number only : 
+	<input type="text" name="num" id="num" /><span id="numloc"></span>
+	<br><br>		 
+	
+	<!--<button onclick="formValidate()" value="register">register </button>-->
+	<input type="button" onclick="formValidate()" value="register" />
+
+<script>
+	function formValidate()
+	{
+		var name=document.getElementById("fullname").value;
+		var pswrd=document.getElementById("password").value;
+		var repswrd=document.getElementById("password2").value;
+		
+		if(name==null || name=="")
+		{
+			alert("name can't be blank");
+			
+		}
+
+		else if(pswrd.length<6)
+		{
+			alert("password must be at least 6 characters long");
+		}
+
+		else if(pswrd!=repswrd)
+		{
+			alert("password must be same");
+		}
+
+		else if(isNaN(document.getElementById("num").value))
+		{
+			document.getElementById("numloc").innerHTML="enter numbers only";
+		}
+
+		else
+		{
+
+			alert(" all entered data is correct ");
+		}
+	}
+
+</script>
+		
+</body>
